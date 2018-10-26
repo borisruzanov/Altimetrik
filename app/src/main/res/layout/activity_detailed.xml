@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+    <ImageView
+        android:id="@+id/detailed_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/item_list_chat_top_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailed_item_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detailed_item_tv_title"
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailed_item_image"
+            android:text="@string/title"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailed_item_tv_description"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tv_title"
+            android:text="@string/description" />
+        <TextView
+            android:id="@+id/detailed_item_tv_donors"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailed_item_tv_description"
+            android:text="donors" />
+
+        <Button
+            android:id="@+id/detailed_button_donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donate"/>
+    </LinearLayout>
+</RelativeLayout>

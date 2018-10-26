@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Altimetrik</string>
+    <string name="api">DONORSCHOOSE</string>
+    <string name="name">name</string>
+    <string name="message">message</string>
+    <string name="online">online</string>
+    <string name="description">description</string>
+    <string name="title">title</string>
+    <string name="donate">DONATE</string>
+</resources>
